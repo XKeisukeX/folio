@@ -188,12 +188,7 @@ function App() {
               </ul>
             </div>
 
-
             </div>
-          </section>
-
-          <section id="contacts">
-          <div className="container py-10"></div>
           </section>
         </main>
     </>
