@@ -5,9 +5,9 @@ export default function Navbar() {
    
     var Links = [
         {name: "Home", link: "/"},
+        {name: "Services", link: "#services"},
         {name: "Skills", link: "#skills"},
         {name: "Projects", link: "#projects"},
-        {name: "Services", link: "#services"},
     ];
 
     const [open, setOpen] = useState(false);

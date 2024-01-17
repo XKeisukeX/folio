@@ -18,7 +18,7 @@ function App() {
         
         <main>
           <section id="home">
-            <div className="container max-w-6xl py-5 md:py-10 md:px-10 px-5">
+            <div className="container max-w-6xl py-5 md:py-10 md:px-10 px-5 mb-20">
               <div className='flex md:flex-col-reverse flex-col lg:flex-row items-center lg:gap-20 md:gap-10 gap-3'>
                 <img src={Profile} className='rounded-full w-24 h-24 md:w-96 md:h-[70vh] md:rounded-lg border-r-4 border-b-4 hover:p-0 border-color-primary p-2 ease-in duration-200' alt="Profile Images" />
                 <div className='text-white space-y-1 text-center lg:text-left'>
@@ -36,6 +36,68 @@ function App() {
                   </div>
                 </div>
               </div>
+            </div>
+          </section>
+
+          <section id="services">
+            <div className="container py-10">
+              <div className='text-center mt-10'>
+                <h2 className='md:text-5xl text-4xl font-semibold text-white'>Serv<span className='text-color-primary'>i</span>ces</h2>
+              </div>
+
+            <div class="px-10 py-14">
+              <ul class="grid lg:grid-cols-4 md:grid-cols-1 gap-8">
+                <li class="list-item col-span-1 flex flex-col items-center mb-4">
+                <div className='flex items-center gap-5 lg:flex-row  flex-col'>
+                <div class="bg-blue-500 text-white rounded-full w-16 h-16 circle text-4xl font-medium flex items-center justify-center mb-2">1</div>
+                  <div className='lg:py-0 py-3'>
+                  <img src="https://cdn.pixabay.com/photo/2014/04/03/10/29/arrow-310633_1280.png" className='lg:w-48 w-28 h-28 rotate-90 lg:rotate-0' alt="" />
+                  </div>
+                </div>
+                  <div class="flex-1 lg:text-left text-center">
+                    <h4 className='text-2xl text-white font-semibold py-3'>Define Requirements</h4>
+                    <p className='leading-relaxed text-white text-sm mt-1'>Crafting success begins with clarity. Through collaborative discussions and meticulous analysis, we define your frontend project's requirements, ensuring precision and alignment with your vision and goals.</p>
+                  </div>
+                </li>
+                <li class="list-item col-span-1 flex flex-col items-center mb-4">
+                <div className='flex items-center gap-5 lg:flex-row flex-col'>
+                <div class="bg-blue-500 text-white rounded-full w-16 h-16 circle flex items-center text-4xl font-medium justify-center mb-2">2</div>
+                <div className='lg:py-0 py-3'>
+                  <img src="https://cdn.pixabay.com/photo/2014/04/03/10/29/arrow-310633_1280.png" className='lg:w-48 w-28 h-28 rotate-90 lg:rotate-0' alt="" />
+                  </div>
+                </div>
+                  <div class="flex-1 lg:text-left text-center">
+                    <h4 className='text-2xl text-white font-semibold py-3'>Design Interfaces</h4>
+                    <p className='leading-relaxed text-white text-sm mt-1'>Elevate user experiences with our "Design Interfaces" service. We craft visually appealing and intuitive interfaces, integrating user-centric design principles to enhance engagement and deliver a standout frontend solution.</p>
+                  </div>
+                </li>
+                <li class="list-item col-span-1 flex flex-col items-center mb-4">
+                <div className='flex items-center gap-5 lg:flex-row flex-col'>
+                <div class="bg-blue-500 text-white rounded-full w-16 h-16 circle flex items-center text-4xl font-medium justify-center mb-2">3</div>
+                <div className='lg:py-0 py-3'>
+                  <img src="https://cdn.pixabay.com/photo/2014/04/03/10/29/arrow-310633_1280.png" className='lg:w-48 w-28 h-28 rotate-90 lg:rotate-0' alt="" />
+                  </div>
+                </div>
+                  <div class="flex-1 lg:text-left text-center">
+                    <h4 className='text-2xl text-white font-semibold py-3'>Code and Develop</h4>
+                    <p className='leading-relaxed text-white text-sm mt-1'>Transforming vision into reality, we execute your frontend project with precision. Our coding expertise and development practices ensure a seamless, efficient, and feature-rich user experience.</p>
+                  </div>
+                </li>
+                <li class="list-item col-span-1 flex flex-col items-center mb-4">
+                <div className='flex items-center gap-5 lg:flex-row flex-col'>
+                <div class="bg-blue-500 text-white rounded-full w-16 h-16 circle flex items-center text-4xl font-medium justify-center mb-2">4</div>
+                <div className='lg:py-0 py-3'>
+                  <img src="https://cdn.pixabay.com/photo/2014/04/03/10/29/arrow-310633_1280.png" className='lg:w-48 w-28 h-28 rotate-90 lg:rotate-0' alt="" />
+                  </div>
+                </div>
+                  <div class="flex-1 lg:text-left text-center">
+                    <h4 className='text-2xl text-white font-semibold py-3'>Optimize and Deploy</h4>
+                    <p className='leading-relaxed text-white text-sm mt-1'>Maximizing performance and ensuring a flawless user experience, our "Optimize and Deploy" service fine-tunes frontend solutions for efficiency. Seamlessly deploy your project, ready for users to engage and enjoy.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
             </div>
           </section>
 
@@ -57,11 +119,11 @@ function App() {
 
           <section id="projects">
             <div className="container py-10">
-              <div className='text-center mb-14'>
+              <div className='text-center mt-10'>
                 <h2 className='md:text-5xl text-4xl font-semibold text-white capitalize'><span className='text-color-primary'>my</span> Projects</h2>
               </div>
 
-                <div className='grid md:grid-cols-2 lg:w-4/5 m-auto place-items-center gap-10 px-8'>
+                <div className='grid md:grid-cols-2 lg:w-4/5 m-auto place-items-center py-14 gap-10 px-8'>
                   <div className='bg-slate-700 rounded-lg border-color-primary border-r-4 border-b-4'>
                     <div className="flex items-center gap-1 pt-3 px-3">
                       <div className='circle1'></div>
@@ -125,76 +187,14 @@ function App() {
             </div>
           </section>
 
-          <section id="services">
-            <div className="container py-10">
-              <div className='text-center py-14'>
-                <h2 className='md:text-5xl text-4xl font-semibold text-white'>Serv<span className='text-color-primary'>i</span>ces</h2>
-              </div>
-
-            <div class="px-10">
-              <ul class="grid lg:grid-cols-4 md:grid-cols-1 gap-8">
-                <li class="list-item col-span-1 flex flex-col items-center mb-4">
-                <div className='flex items-center gap-5 lg:flex-row  flex-col'>
-                <div class="bg-blue-500 text-white rounded-full w-16 h-16 circle text-4xl font-medium flex items-center justify-center mb-2">1</div>
-                  <div className='lg:py-0 py-3'>
-                  <img src="https://cdn.pixabay.com/photo/2014/04/03/10/29/arrow-310633_1280.png" className='lg:w-48 w-28 h-28 rotate-90 lg:rotate-0' alt="" />
-                  </div>
-                </div>
-                  <div class="flex-1 lg:text-left text-center">
-                    <h4 className='text-2xl text-white font-semibold py-3'>Define Requirements</h4>
-                    <p className='leading-relaxed text-white text-sm mt-1'>Crafting success begins with clarity. Through collaborative discussions and meticulous analysis, we define your frontend project's requirements, ensuring precision and alignment with your vision and goals.</p>
-                  </div>
-                </li>
-                <li class="list-item col-span-1 flex flex-col items-center mb-4">
-                <div className='flex items-center gap-5 lg:flex-row flex-col'>
-                <div class="bg-blue-500 text-white rounded-full w-16 h-16 circle flex items-center text-4xl font-medium justify-center mb-2">2</div>
-                <div className='lg:py-0 py-3'>
-                  <img src="https://cdn.pixabay.com/photo/2014/04/03/10/29/arrow-310633_1280.png" className='lg:w-48 w-28 h-28 rotate-90 lg:rotate-0' alt="" />
-                  </div>
-                </div>
-                  <div class="flex-1 lg:text-left text-center">
-                    <h4 className='text-2xl text-white font-semibold py-3'>Design Interfaces</h4>
-                    <p className='leading-relaxed text-white text-sm mt-1'>Elevate user experiences with our "Design Interfaces" service. We craft visually appealing and intuitive interfaces, integrating user-centric design principles to enhance engagement and deliver a standout frontend solution.</p>
-                  </div>
-                </li>
-                <li class="list-item col-span-1 flex flex-col items-center mb-4">
-                <div className='flex items-center gap-5 lg:flex-row flex-col'>
-                <div class="bg-blue-500 text-white rounded-full w-16 h-16 circle flex items-center text-4xl font-medium justify-center mb-2">3</div>
-                <div className='lg:py-0 py-3'>
-                  <img src="https://cdn.pixabay.com/photo/2014/04/03/10/29/arrow-310633_1280.png" className='lg:w-48 w-28 h-28 rotate-90 lg:rotate-0' alt="" />
-                  </div>
-                </div>
-                  <div class="flex-1 lg:text-left text-center">
-                    <h4 className='text-2xl text-white font-semibold py-3'>Code and Develop</h4>
-                    <p className='leading-relaxed text-white text-sm mt-1'>Transforming vision into reality, we execute your frontend project with precision. Our coding expertise and development practices ensure a seamless, efficient, and feature-rich user experience.</p>
-                  </div>
-                </li>
-                <li class="list-item col-span-1 flex flex-col items-center mb-4">
-                <div className='flex items-center gap-5 lg:flex-row flex-col'>
-                <div class="bg-blue-500 text-white rounded-full w-16 h-16 circle flex items-center text-4xl font-medium justify-center mb-2">4</div>
-                <div className='lg:py-0 py-3'>
-                  <img src="https://cdn.pixabay.com/photo/2014/04/03/10/29/arrow-310633_1280.png" className='lg:w-48 w-28 h-28 rotate-90 lg:rotate-0' alt="" />
-                  </div>
-                </div>
-                  <div class="flex-1 lg:text-left text-center">
-                    <h4 className='text-2xl text-white font-semibold py-3'>Optimize and Deploy</h4>
-                    <p className='leading-relaxed text-white text-sm mt-1'>Maximizing performance and ensuring a flawless user experience, our "Optimize and Deploy" service fine-tunes frontend solutions for efficiency. Seamlessly deploy your project, ready for users to engage and enjoy.</p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-
-            </div>
-          </section>
-
           <section id="contacts">
-       <div className="container py-10 mb-20">
-        <div className='text-center py-10 md:px-0 px-8'>
+       <div className="container py-10">
+        <div className='text-center md:px-0 px-8 mt-10'>
            <h2 className='md:text-5xl text-4xl font-semibold text-color-primary'>C<span className='text-white'>ontacts</span></h2>
            <p className='text-white font-medium mt-5'>Hey there, Feel free to reach out to me using the following contact details.</p>
         </div>
 
-       <form className='md:px-0 px-8'>
+       <form className='md:px-0 px-8 py-14'>
           <div className='bg-white lg:w-1/2 m-auto px-4 py-8 rounded-xl'>
             <div className=''>
               <div className='grid md:grid-cols-2 gap-2 place-items-center'>
