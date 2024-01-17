@@ -1,4 +1,4 @@
-import { BarsArrowDownIcon, BarsArrowUpIcon } from '@heroicons/react/24/solid';
+// import { BarsArrowDownIcon, BarsArrowUpIcon } from '@heroicons/react/24/solid';
 import { useState } from 'react';
 
 export default function Navbar() {
@@ -36,11 +36,11 @@ export default function Navbar() {
                 </div>
             </ul>
 
-            <div className='md:hidden w-8 h-8 text-white cursor-pointer' onClick={() => setOpen(!open)}>
+            {/* <div className='md:hidden w-8 h-8 text-white cursor-pointer' onClick={() => setOpen(!open)}>
                 {
                     open ? <BarsArrowUpIcon /> : <BarsArrowDownIcon />
                 }
-            </div>
+            </div> */}
         </nav>
        </header>
     );

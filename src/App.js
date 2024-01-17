@@ -1,5 +1,5 @@
 import './App.css';
-import Headroom from 'react-headroom';
+// import Headroom from 'react-headroom';
 import Navbar from './Navbar';
 import Profile from './Images/jmd6.jpg';
 import Html from './Images/html.png';
@@ -14,9 +14,7 @@ import Project4 from './Images/project4.png';
 function App() {
   return (
     <>
-          <Headroom>
-            <Navbar />
-          </Headroom>
+          <Navbar />
         
         <main>
           <section id="home">
