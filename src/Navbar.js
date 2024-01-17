@@ -8,7 +8,6 @@ export default function Navbar() {
         {name: "Skills", link: "#skills"},
         {name: "Projects", link: "#projects"},
         {name: "Services", link: "#services"},
-        {name: "Connect", link: "#connect"},
     ];
 
     const [open, setOpen] = useState(false);
@@ -24,7 +23,7 @@ export default function Navbar() {
                 <a href="/" id='Logo' className='text-2xl font-bold text-white'>Logo.</a>
             </div>
 
-            <ul className={`md:flex md:items-center md:space-x-8 absolute md:static left-0 z-[-1]  md:z-auto pb-7 md:pb-0 text-center bg-slate-800 md:bg-transparent w-full md:w-auto ${open ? "top-14" : "top-[-490px]"} transition-all duration-500`}>
+            <ul className={`md:flex md:items-center md:space-x-8 absolute md:static left-0 z-[-1]  md:z-auto pb-7 md:pb-0 text-center bg-slate-800 md:bg-transparent w-full md:w-auto ${open ? 'top-14' : 'top-[-490px]'} transition-all duration-500`}>
                 {
                     Links.map((Link) => (
                         <li className='my-8 md:my-0'>
@@ -33,7 +32,7 @@ export default function Navbar() {
                     ))
                 }
                 <div className='md:px-0 px-4'>
-                    <button className='py-2 px-6 bg-color-primary w-full md:w-auto font-medium text-white rounded hover:opacity-85 ease-in duration-200'>Contacts</button>
+                    <button className='py-2 px-6 bg-color-primary w-full md:w-auto font-medium text-white rounded hover:opacity-85 ease-in duration-200'><a href="#contacts">Contacts</a></button>
                 </div>
             </ul>
 

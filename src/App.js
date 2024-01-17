@@ -1,5 +1,5 @@
 import './App.css';
-// import Headroom from 'react-headroom';
+import Headroom from 'react-headroom';
 import Navbar from './Navbar';
 import Profile from './Images/jmd6.jpg';
 import Html from './Images/html.png';
@@ -14,9 +14,9 @@ import Project4 from './Images/project4.png';
 function App() {
   return (
     <>
-     
-          <Navbar />
-        
+          <Headroom>
+            <Navbar />
+          </Headroom>
         
         <main>
           <section id="home">
@@ -188,6 +188,45 @@ function App() {
 
             </div>
           </section>
+
+          <section id="contacts">
+       <div className="container py-10 mb-20">
+        <div className='text-center py-10 md:px-0 px-8'>
+           <h2 className='md:text-5xl text-4xl font-semibold text-color-primary'>C<span className='text-white'>ontacts</span></h2>
+           <p className='text-white font-medium mt-5'>Hey there, Feel free to reach out to me using the following contact details.</p>
+        </div>
+
+       <form className='md:px-0 px-8'>
+          <div className='bg-white lg:w-1/2 m-auto px-4 py-8 rounded-xl'>
+            <div className=''>
+              <div className='grid md:grid-cols-2 gap-2 place-items-center'>
+                <input type="text" className='p-3 w-full bg-gray-100 rounded-lg focus:outline-color-primary font-semibold text-gray-500 text-sm' placeholder='Name' />
+                <input type="text" className='p-3 w-full bg-gray-100 rounded-lg focus:outline-color-primary font-semibold text-gray-500 text-sm' placeholder='Email' />
+                <input type="text" className='p-3 w-full bg-gray-100 rounded-lg focus:outline-color-primary font-semibold text-gray-500 text-sm' placeholder='Phone' />
+                <input type="text" className='p-3 w-full bg-gray-100 rounded-lg focus:outline-color-primary font-semibold text-gray-500 text-sm' placeholder='Company' />
+              </div>
+              <textarea rows="4" className='p-3 w-full mt-2 bg-gray-100 rounded-lg focus:outline-color-primary font-semibold' placeholder='Message'></textarea>
+              <button className='py-2 px-4 w-full bg-color-primary rounded-lg text-white capitalize font-semibold hover:opacity-85 ease-in duration-200'>send message</button>
+            </div>
+          </div>
+        </form>
+       </div>
+      </section>
+
+      <footer className='bg-color-primary'>
+        <div className="container py-10">
+          <div className='flex items-center gap-3 justify-center flex-col'>
+            <div>
+              <h2 className='text-4xl font-bold text-white leading-tight capitalize'>get in touch</h2>
+            </div>
+            <div className='flex items-center space-x-4'>
+              <i className='fa fa-github bg-white text-color-primary rounded-full py-1 px-3 text-lg font-medium cursor-pointer hover:bg-slate-800 hover:text-white ease-in duration-200'></i>
+              <i className='fa fa-envelope bg-white text-color-primary rounded-full py-1 px-3 text-lg font-medium cursor-pointer hover:bg-slate-800 hover:text-white ease-in duration-200'></i>
+              <i className='fa fa-linkedin bg-white text-color-primary rounded-full py-1 px-3 text-lg font-medium cursor-pointer hover:bg-slate-800 hover:text-white ease-in duration-200'></i>
+            </div>
+          </div>
+        </div>
+      </footer>
         </main>
     </>
   );
