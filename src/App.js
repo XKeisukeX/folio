@@ -1,4 +1,5 @@
 import './App.css';
+import Headroom from 'react-headroom';
 import Navbar from './Navbar';
 import Profile from './Images/jmd6.jpg';
 import Html from './Images/html.png';
@@ -9,13 +10,10 @@ import React from './Images/react.png';
 import Project2 from './Images/project2.png';
 import Project3 from './Images/project3.png';
 import Project4 from './Images/project4.png';
-import Arrow from './Images/arrow.png';
-import Headroom from 'react-headroom';
 
 function App() {
   return (
     <>
-    
         <Headroom>
           <Navbar />
         </Headroom>
