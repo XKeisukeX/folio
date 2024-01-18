@@ -1,5 +1,5 @@
 import './App.css';
-// import Headroom from 'react-headroom';
+import Headroom from 'react-headroom';
 import Navbar from './Navbar';
 import Profile from './Images/jmd6.jpg';
 import Html from './Images/html.png';
@@ -14,12 +14,14 @@ import Project4 from './Images/project4.png';
 function App() {
   return (
     <>
+        <Headroom>
           <Navbar />
+        </Headroom>
         
         <main>
           <section id="home">
             <div className="container max-w-6xl py-5 md:py-10 md:px-10 px-5 mb-20">
-              <div className='flex md:flex-col-reverse flex-col lg:flex-row items-center lg:gap-20 md:gap-10 gap-3'>
+              <div className='flex md:flex-col-reverse flex-col lg:flex-row items-center lg:gap-20 md:gap-10 gap-3 md:mt-0 mt-10'>
                 <img src={Profile} className='rounded-full w-24 h-24 md:w-96 md:h-[70vh] md:rounded-lg border-r-4 border-b-4 hover:p-0 border-color-primary p-2 ease-in duration-200' alt="Profile Images" />
                 <div className='text-white space-y-1 text-center lg:text-left'>
                   <div className='flex flex-col'>
@@ -29,7 +31,7 @@ function App() {
                   </div>
                     <p className='py-4 md:py-5 leading-relaxed'>Enthusiastic IT student excelling in <b>Frontend Development</b>, eager to apply self-taught skills. Excited about contributing to innovative web solutions, collaborating with professionals for meaningful impact and continuous growth.</p>
                   <div>
-                    <a href="#skills">
+                    <a href="#services">
                     <button className='py-2 pl-6 pr-16 font-medium capitalize border-2 border-color-primary rounded-full'>more about me</button>
                     <button className='py-2 px-5 bg-color-primary rounded-full -ml-14 hover:opacity-85 ease-in duration-200'><i class="fa fa-arrow-right"></i></button>
                     </a>
@@ -188,43 +190,43 @@ function App() {
           </section>
 
           <section id="contacts">
-       <div className="container py-10">
-        <div className='text-center md:px-0 px-8 mt-10'>
-           <h2 className='md:text-5xl text-4xl font-semibold text-color-primary'>C<span className='text-white'>ontacts</span></h2>
-           <p className='text-white font-medium mt-5'>Hey there, Feel free to reach out to me using the following contact details.</p>
-        </div>
-
-       <form className='md:px-0 px-8 py-14'>
-          <div className='bg-white lg:w-1/2 m-auto px-4 py-8 rounded-xl'>
-            <div className=''>
-              <div className='grid md:grid-cols-2 gap-2 place-items-center'>
-                <input type="text" className='p-3 w-full bg-gray-100 rounded-lg focus:outline-color-primary font-semibold text-gray-500 text-sm' placeholder='Name' />
-                <input type="text" className='p-3 w-full bg-gray-100 rounded-lg focus:outline-color-primary font-semibold text-gray-500 text-sm' placeholder='Email' />
-                <input type="text" className='p-3 w-full bg-gray-100 rounded-lg focus:outline-color-primary font-semibold text-gray-500 text-sm' placeholder='Phone' />
-                <input type="text" className='p-3 w-full bg-gray-100 rounded-lg focus:outline-color-primary font-semibold text-gray-500 text-sm' placeholder='Company' />
+            <div className="container py-10">
+              <div className='text-center md:px-0 px-8 mt-10'>
+                <h2 className='md:text-5xl text-4xl font-semibold text-color-primary'>C<span className='text-white'>ontacts</span></h2>
+                <p className='text-white font-medium mt-5'>Hey there, Feel free to reach out to me using the following contact details.</p>
               </div>
-              <textarea rows="4" className='p-3 w-full mt-2 bg-gray-100 rounded-lg focus:outline-color-primary font-semibold' placeholder='Message'></textarea>
-              <button className='py-2 px-4 w-full bg-color-primary rounded-lg text-white capitalize font-semibold hover:opacity-85 ease-in duration-200'>send message</button>
-            </div>
-          </div>
-        </form>
-       </div>
-      </section>
 
-      <footer className='bg-color-primary'>
-        <div className="container py-10">
-          <div className='flex items-center gap-3 justify-center flex-col'>
-            <div>
-              <h2 className='text-4xl font-bold text-white leading-tight capitalize'>get in touch</h2>
+            <form className='md:px-0 px-8 py-14'>
+                <div className='bg-white lg:w-1/2 m-auto px-4 py-8 rounded-xl'>
+                  <div className=''>
+                    <div className='grid md:grid-cols-2 gap-2 place-items-center'>
+                      <input type="text" className='p-3 w-full bg-gray-100 rounded-lg focus:outline-color-primary font-semibold text-slate-700 text-sm' placeholder='Name' />
+                      <input type="text" className='p-3 w-full bg-gray-100 rounded-lg focus:outline-color-primary font-semibold text-slate-700 text-sm' placeholder='Email' />
+                      <input type="text" className='p-3 w-full bg-gray-100 rounded-lg focus:outline-color-primary font-semibold text-slate-700 text-sm' placeholder='Phone' />
+                      <input type="text" className='p-3 w-full bg-gray-100 rounded-lg focus:outline-color-primary font-semibold text-slate-700 text-sm' placeholder='Company' />
+                    </div>
+                    <textarea rows="4" className='p-3 w-full mt-2 bg-gray-100 rounded-lg focus:outline-color-primary font-semibold text-slate-700' placeholder='Message'></textarea>
+                    <button className='py-2 px-4 w-full bg-color-primary rounded-lg text-white capitalize font-semibold hover:opacity-85 ease-in duration-200'>send message</button>
+                  </div>
+                </div>
+              </form>
             </div>
-            <div className='flex items-center space-x-4'>
-              <i className='fa fa-github bg-white text-color-primary rounded-full py-1 px-3 text-lg font-medium cursor-pointer hover:bg-slate-800 hover:text-white ease-in duration-200'></i>
-              <i className='fa fa-envelope bg-white text-color-primary rounded-full py-1 px-3 text-lg font-medium cursor-pointer hover:bg-slate-800 hover:text-white ease-in duration-200'></i>
-              <i className='fa fa-linkedin bg-white text-color-primary rounded-full py-1 px-3 text-lg font-medium cursor-pointer hover:bg-slate-800 hover:text-white ease-in duration-200'></i>
+          </section>
+
+          <footer className='bg-color-primary'>
+            <div className="container py-10">
+              <div className='flex items-center gap-3 justify-center flex-col'>
+                <div>
+                  <h2 className='text-4xl font-bold text-white leading-tight capitalize'>get in touch</h2>
+                </div>
+                <div className='flex items-center space-x-4'>
+                  <i className='fa fa-github bg-white text-color-primary rounded-full py-1 px-3 text-lg font-medium cursor-pointer hover:bg-slate-800 hover:text-white ease-in duration-200'></i>
+                  <i className='fa fa-envelope bg-white text-color-primary rounded-full py-1 px-3 text-lg font-medium cursor-pointer hover:bg-red-500 hover:text-white ease-in duration-200'></i>
+                  <i className='fa fa-linkedin bg-white text-color-primary rounded-full py-1 px-3 text-lg font-medium cursor-pointer hover:bg-blue-600 hover:text-white ease-in duration-200'></i>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </footer>
+          </footer>
         </main>
     </>
   );
