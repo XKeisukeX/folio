@@ -32,7 +32,7 @@ export default function Navbar() {
                     ))
                 }
                 <div className='md:px-0 px-4'>
-                    <a href="#contacts"><button className='py-2 px-6 bg-color-primary w-full md:w-auto font-medium text-white rounded hover:opacity-85 ease-in duration-200'>Contacts</button></a>
+                    <a href="#contacts"><button onClick={handleLinkClick} className='py-2 px-6 bg-color-primary w-full md:w-auto font-medium text-white rounded hover:opacity-85 ease-in duration-200'>Contacts</button></a>
                 </div>
             </ul>
 
