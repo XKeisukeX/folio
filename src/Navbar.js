@@ -20,7 +20,7 @@ export default function Navbar() {
        <header className='bg-slate-500 dark:bg-slate-800'>
         <nav className='container flex justify-between items-center p-5'>
             <div>
-                <a href="/" id='Logo' className='text-2xl font-bold text-white'>Logo.</a>
+                <a href="/" id='Logo' className='md:text-2xl text-xl font-bold text-white'>JM<span className='text-color-primary'>Div.</span></a>
             </div>
 
             <ul className={`md:flex md:items-center md:space-x-8 absolute md:static left-0 z-[-1]  md:z-auto pb-7 md:pb-0 text-center bg-slate-800 md:bg-transparent w-full md:w-auto ${open ? 'top-14' : 'top-[-490px]'} transition-all duration-500`}>
